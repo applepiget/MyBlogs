@@ -3,13 +3,43 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Udon
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Zeng Xu
+language: zh-CN
 timezone: ''
+
+# ---------------------------------------------------------------
+#Model Settings
+# ---------------------------------------------------------------
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  log: false
+  model:
+    use: live2d-widget-model-wanko
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+
+
+# ---------------------------------------------------------------
+# Search Settings
+# ---------------------------------------------------------------
+search:
+path: search.xml
+field: post
+format: html
+limit: 10000
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
